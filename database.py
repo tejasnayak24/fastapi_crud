@@ -5,7 +5,7 @@ from sqlalchemy.orm import declarative_base, sessionmaker
 
 
 BASE_DIR = Path(__file__).resolve().parent
-DATABASE_URL = f"sqlite:///{(BASE_DIR / 'users.db').as_posix()}"
+DATABASE_URL = f"sqlite:///{(BASE_DIR / 'instagram.db').as_posix()}"
 
 engine = create_engine(
     DATABASE_URL,

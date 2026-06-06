@@ -1,10 +1,10 @@
 from fastapi import FastAPI
-from routers.user_router import user_router
+from routers.instagram_router import instagram_router
 app = FastAPI()
 
 
-app.include_router(user_router)
+app.include_router(instagram_router)
 
 @app.get("/")
 async def root():
-    return {"message": "Hello World"}
+    return {"message": "Instagram-like backend is running"}

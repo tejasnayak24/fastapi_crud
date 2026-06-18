@@ -6,12 +6,10 @@ from sqlalchemy import inspect, text
 
 
 BASE_DIR = Path(__file__).resolve().parent
-DATABASE_URL = f"sqlite:///{(BASE_DIR / 'instagram.db').as_posix()}"
+DATABASE_URL = "postgresql://postgres.dvxlryatqcrsaaqrfkec:feX1YXUZMs80E0MF@aws-1-ap-south-1.pooler.supabase.com:6543/postgres"
 
 engine = create_engine(
-    DATABASE_URL,
-    connect_args={"check_same_thread": False},
-)
+    DATABASE_URL)
 SessionLocal = sessionmaker(autocommit=False, autoflush=False, bind=engine)
 Base = declarative_base()
 

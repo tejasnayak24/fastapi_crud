@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # fastapi_crud
 
 Instagram-style backend built with FastAPI, SQLAlchemy, and SQLite.
@@ -10,3 +11,6 @@ Core endpoints:
 - `POST /posts/{post_id}/likes`, `DELETE /posts/{post_id}/likes`
 - `POST /users/{follower_id}/follow/{followed_id}`, `DELETE /users/{follower_id}/follow/{followed_id}`
 - `GET /feed/{user_id}`
+=======
+# fastapi_crud
+>>>>>>> f54ad720f904fc62890aa67feea3042f5d292837
